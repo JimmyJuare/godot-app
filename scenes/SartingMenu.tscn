@@ -1,0 +1,55 @@
+[gd_scene load_steps=2 format=3 uid="uid://db6b7oj85il0o"]
+
+[ext_resource type="FontFile" uid="uid://bsdb1tx7b83ic" path="res://fonts/MUNICH SANS.ttf" id="1_uld3r"]
+
+[node name="Game" type="Node2D"]
+
+[node name="backGround" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="backGround"]
+custom_minimum_size = Vector2(576, 1024)
+offset_right = 571.0
+offset_bottom = 740.0
+color = Color(0.141176, 0.145098, 0.14902, 1)
+
+[node name="UI" type="Node2D" parent="."]
+
+[node name="Pluvia" type="Label" parent="UI"]
+custom_minimum_size = Vector2(576, 0)
+offset_top = 420.0
+offset_right = 576.0
+offset_bottom = 580.0
+theme_override_fonts/font = ExtResource("1_uld3r")
+theme_override_font_sizes/font_size = 145
+text = "SkyFall"
+horizontal_alignment = 1
+
+[node name="Menu" type="Node2D" parent="UI"]
+
+[node name="Start" type="Button" parent="UI/Menu"]
+custom_minimum_size = Vector2(576, 80)
+offset_top = 637.0
+offset_right = 576.0
+offset_bottom = 717.0
+text = "Start"
+
+[node name="Settings" type="Button" parent="UI/Menu"]
+custom_minimum_size = Vector2(576, 80)
+offset_top = 721.0
+offset_right = 576.0
+offset_bottom = 801.0
+text = "Settings
+"
+
+[node name="Quit" type="Button" parent="UI/Menu"]
+custom_minimum_size = Vector2(576, 80)
+offset_top = 807.0
+offset_right = 576.0
+offset_bottom = 887.0
+text = "Quit"
+
+[node name="Score" type="Node2D" parent="."]
+
+[node name="Obstacles" type="Node2D" parent="."]
+
+[node name="Node2D" type="Node2D" parent="."]

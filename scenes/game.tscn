@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cfaxpwkn7jdud"]
+
+[node name="Game" type="Node2D"]
+
+[node name="background" type="Node2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="background"]
+custom_minimum_size = Vector2(576, 1024)
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.141176, 0.145098, 0.14902, 1)
